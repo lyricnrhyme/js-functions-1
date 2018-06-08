@@ -68,7 +68,10 @@ function multiply(x,y) {
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide(x,y) {
+    var quotient = x / y;
+    return quotient;
+}
 
 /**
  * Multiplies a number by itself.
