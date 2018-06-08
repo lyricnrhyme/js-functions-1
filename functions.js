@@ -119,7 +119,7 @@ function calculate(operation, x, y) {
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-function isGreaterThan(a,b) {
+function isGreaterThan(a, b) {
     if (a>b) {
         return true;
     } else {
@@ -134,7 +134,7 @@ function isGreaterThan(a,b) {
  * @return {boolean} `a` is smaller than `b`
  */
 function isLessThan(a,b) {
-    if (a<b) {
+    if (a < b) {
         return true;
     } else {
         return false;
@@ -148,7 +148,7 @@ function isLessThan(a,b) {
  * @return {boolean} the numbers are equal
  */
 function areEqual(a,b) {
-    if (a=b) {
+    if (a === b) {
         return true;
     } else {
         return false;
@@ -161,7 +161,13 @@ function areEqual(a,b) {
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum(a,b) {
+    if (a>b) {
+        return b;
+    } else {
+        return a;
+    }
+}
 
 /**
  * Returns the largest value of two numbers.
