@@ -34,6 +34,10 @@ function decrease(num) {
  * @param {number} y
  * @return {number} the sum
  */
+function add(x,y) {
+    var sum = x + y;
+    return sum;
+}
 
 
 /**
