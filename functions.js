@@ -23,7 +23,10 @@ function increase(num) {
  * @param {number} n
  * @return {number}
  */
-
+function decrease(num) {
+    var minusOne = num - 1;
+    return minusOne;
+}
 
 /**
  * Adds two numbers.
