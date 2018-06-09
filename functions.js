@@ -3,21 +3,30 @@
  * @param {number} n
  * @return {string} the number as a string
  */
-
+function numberToString(num) {
+    var convert = num.toString();
+    return convert;
+}
 
 /**
  * Adds one to a given number.
  * @param {number} n
  * @return {number}
  */
-
+function increase(num) {
+    var plusOne = num + 1;
+    return plusOne;
+}
 
 /**
  * Subtracts one from a given number.
  * @param {number} n
  * @return {number}
  */
-
+function decrease(num) {
+    var minusOne = num - 1;
+    return minusOne;
+}
 
 /**
  * Adds two numbers.
@@ -25,6 +34,10 @@
  * @param {number} y
  * @return {number} the sum
  */
+function add(x,y) {
+    var sum = x + y;
+    return sum;
+}
 
 
 /**
@@ -33,7 +46,10 @@
  * @param {number} y
  * @return {number} the difference
  */
-
+function subtract(x,y) {
+    var difference = x - y;
+    return difference;
+}
 
 /**
  * Multiplies two numbers.
@@ -41,7 +57,10 @@
  * @param {number} y
  * @return {number} the product
  */
-
+function multiply(x,y) {
+    var product = x * y;
+    return product;
+}
 
 /**
  * Divides the first number by the second.
@@ -49,14 +68,20 @@
  * @param {number} y
  * @return {number} the quotient
  */
-
+function divide(x,y) {
+    var quotient = x / y;
+    return quotient;
+}
 
 /**
  * Multiplies a number by itself.
  * @param {number} x, number to be squared
  * @return {number} squared
  */
-
+function square(x) {
+    var squared = x * x;
+    return squared;
+}
 
 /**
  * Performs a mathematical operation on two numbers.
@@ -66,6 +91,26 @@
  * @param {number} y
  * @return {number} the result
  */
+function calculate(operation, x, y) {
+    var result = null;
+    if (operation === "add") {
+        var result = x + y;
+        console.log(x + " + " + y + " = " + result);
+        return result;
+    } else if (operation === "subtract") {
+        var result = x - y;
+        console.log(x + " - " + y + " = " + result);
+        return result;
+    } else if (operation === "multiply") {
+        var result = x * y;
+        console.log(x + " * " + y + " = " + result);
+        return result;
+    } else if (operation === "divide") {
+        var result = x / y;
+        console.log(x + " / " + y + " = " + result);
+        return result;
+    }
+}
 
 
 /**
@@ -74,7 +119,13 @@
  * @param {number} b
  * @return {boolean} `a` is larger than `b`
  */
-
+function isGreaterThan(a, b) {
+    if (a>b) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `a` is less than `b`.
@@ -82,7 +133,13 @@
  * @param {number} b
  * @return {boolean} `a` is smaller than `b`
  */
-
+function isLessThan(a,b) {
+    if (a < b) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `a` and `b` are equal.
@@ -90,7 +147,13 @@
  * @param {number} b
  * @return {boolean} the numbers are equal
  */
-
+function areEqual(a,b) {
+    if (a === b) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns the smallest value of two numbers.
@@ -98,7 +161,13 @@
  * @param {number} y
  * @return {number} the smallest number
  */
-
+function minimum(x,y) {
+    if (x>y) {
+        return y;
+    } else {
+        return x;
+    }
+}
 
 /**
  * Returns the largest value of two numbers.
@@ -106,21 +175,39 @@
  * @param {number} y
  * @return {number} the largest number
  */
-
+function maximum(x,y) {
+    if (x>y) {
+        return x;
+    } else {
+        return y;
+    }
+}
 
 /**
  * Returns true if `n` is even.
  * @param {number} n
  * @return {boolean} the number is even
  */
-
+function isEven(n) {
+    if ((n%2) == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 /**
  * Returns true if `n` is odd.
  * @param {number} n
  * @return {boolean} the number is odd
  */
-
+function isOdd(n) {
+    if ((n%2) == 0) {
+        return false;
+    } else {
+        return true;
+    }
+}
 
 /**
  * Returns a letter grade.
@@ -133,6 +220,40 @@
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
+// function letterGrade(score, total) {
+//     // var result = "";
+//     // var percent = (score / total);
+//     if ((score/total) >= 0.9) {
+//         return 'A';
+//     } else if ((score/total) >= 0.8 && (score/total) <= 0.89) {
+//         return 'B';
+//     } else if ((score/total) >= 0.7 && (score/total) <= 0.79) {
+//         return 'C';
+//     } else if ((score/total) >= 0.6 && (score/total) <= 0.69) {
+//         return 'D';
+//     } else {
+//         return 'F';
+//     }
+// }
+
+
+
+function letterGrade (score, total) {
+    if ((score/total) >= .90) {
+        return "A";
+    } else if ((score/total) >= .80 && (score/total) < .90) {
+        return "B";
+    }
+    else if ((score/total) >= .70 && (score/total) < .80) {
+        return "C";
+    }
+    else if ((score/total) >= .60 && (score/total) < .70) {
+        return "D";
+    }
+    else {
+        return "F";
+    }
+ }
 
 
 /**
