@@ -220,23 +220,6 @@ function isOdd(n) {
  * @param {number} total maximum possible score
  * @return {string} the score represented as a letter grade
  */
-// function letterGrade(score, total) {
-//     // var result = "";
-//     // var percent = (score / total);
-//     if ((score/total) >= 0.9) {
-//         return 'A';
-//     } else if ((score/total) >= 0.8 && (score/total) <= 0.89) {
-//         return 'B';
-//     } else if ((score/total) >= 0.7 && (score/total) <= 0.79) {
-//         return 'C';
-//     } else if ((score/total) >= 0.6 && (score/total) <= 0.69) {
-//         return 'D';
-//     } else {
-//         return 'F';
-//     }
-// }
-
-
 
 function letterGrade (score, total) {
     if ((score/total) >= .90) {
@@ -264,6 +247,15 @@ function letterGrade (score, total) {
  * @return {object} restaurant
  */
 
+ function incrementReviews(restaurant) {
+    if (!!restaurant.reviews) {
+        restaurant.reviews += 1;
+        return restaurant;
+    } else {
+        restaurant.reviews = 1;
+        return restaurant
+    }
+}
 
 /**
  * Joins two strings with a space.
