@@ -274,4 +274,9 @@ function combine(word1, word2) {
  * @param {number} radius
  * @return {object} circle
  */
-
+function createCircle(radius) {
+    var circle = {};
+    circle.circumference = Math.PI * radius * 2;;
+    circle.area = Math.PI * radius * radius;
+    return circle;
+}
